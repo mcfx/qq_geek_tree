@@ -1,0 +1,816 @@
+0    resize stack 3
+2    or stack[2], []
+15   push "window"
+17   pop 1; push [window, s1]
+33   push "CA1807EB"
+35   add s2, s1
+36   jmp 2426
+38   resize stack 7
+40   or stack[2], []
+42   or stack[3], []
+44   or stack[4], []
+46   or stack[5], []
+48   or stack[6], []
+50   push [4]
+63   push "BigInt"
+65   pop 1; push [window, s1]
+66   push 0
+68   pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+70   mov stack[s2[0]][0], s1
+71   push [5]
+73   push 0
+75   mov stack[s2[0]][0], s1
+76   swap stack[-2], s1
+78   push [6]
+91   push "BigInt"
+93   pop 1; push [window, s1]
+94   push 1
+96   pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+98   mov stack[s2[0]][0], s1
+99   swap stack[-2], s1
+101  pop 6
+103  push [5]
+105  push stack[s1[0]][0]
+106  push [3]
+109  push "a"
+111  pop 1; push [stack[s2][0], s1]
+112  push 0
+114  add s2, s1
+115  pop 1; push s1[0][s1[1]]
+116  cmp s2, s1
+117  not s1
+118  jnz 123
+120  pop 1
+121  jmp 243
+123  push [6]
+125  pop 1; push s1
+126  push stack[s1[0]][0]
+138  push "BigInt"
+140  pop 1; push [window, s1]
+154  push "1661594"
+156  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+158  pop 1; mul s2, s1
+159  mov stack[s2[0]][0], s1
+160  swap stack[-2], s1
+162  push [6]
+164  pop 1; push s1
+165  push stack[s1[0]][0]
+177  push "BigInt"
+179  pop 1; push [window, s1]
+211  push "1125899906842597"
+213  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+215  mod s2, s1
+216  mov stack[s2[0]][0], s1
+217  swap stack[-2], s1
+219  push [5]
+221  pop 1; push s1
+222  push stack[s1[0]][0]
+223  pop 1; push s1
+224  swap stack[-3], s1
+226  swap stack[-2], s1
+228  push 1
+231  mov stack[s2[0]][0], s1
+232  pop 1
+233  mov s1, 0
+235  swap stack[-2], s1
+237  or s1, s2
+238  pop 5
+240  pop 1
+241  jmp 103
+243  push [5]
+245  push 0
+247  mov stack[s2[0]][0], s1
+248  swap stack[-2], s1
+250  pop 1
+251  pop 1
+252  push [5]
+254  push stack[s1[0]][0]
+255  push [3]
+258  push "a"
+260  pop 1; push [stack[s2][0], s1]
+261  push 1
+263  add s2, s1
+264  pop 1; push s1[0][s1[1]]
+265  cmp s2, s1
+266  not s1
+267  jnz 272
+269  pop 1
+270  jmp 392
+272  push [6]
+274  pop 1; push s1
+275  push stack[s1[0]][0]
+287  push "BigInt"
+289  pop 1; push [window, s1]
+303  push "2477627"
+305  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+307  pop 1; mul s2, s1
+308  mov stack[s2[0]][0], s1
+309  swap stack[-2], s1
+311  push [6]
+313  pop 1; push s1
+314  push stack[s1[0]][0]
+326  push "BigInt"
+328  pop 1; push [window, s1]
+360  push "1125899906842597"
+362  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+364  mod s2, s1
+365  mov stack[s2[0]][0], s1
+366  swap stack[-2], s1
+368  push [5]
+370  pop 1; push s1
+371  push stack[s1[0]][0]
+372  pop 1; push s1
+373  swap stack[-3], s1
+375  swap stack[-2], s1
+377  push 1
+380  mov stack[s2[0]][0], s1
+381  pop 1
+382  mov s1, 0
+384  swap stack[-2], s1
+386  or s1, s2
+387  pop 5
+389  pop 1
+390  jmp 252
+392  push [4]
+394  pop 1; push s1
+395  push stack[s1[0]][0]
+396  push stack[6][0]
+399  mov stack[s2[0]][0], s1
+400  swap stack[-2], s1
+402  push [4]
+404  pop 1; push s1
+405  push stack[s1[0]][0]
+417  push "BigInt"
+419  pop 1; push [window, s1]
+451  push "1125899906842597"
+453  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+455  mod s2, s1
+456  mov stack[s2[0]][0], s1
+457  swap stack[-2], s1
+459  push [5]
+461  push 0
+463  mov stack[s2[0]][0], s1
+464  swap stack[-2], s1
+466  push [6]
+479  push "BigInt"
+481  pop 1; push [window, s1]
+482  push 1
+484  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+486  mov stack[s2[0]][0], s1
+487  swap stack[-2], s1
+489  pop 8
+491  push [5]
+493  push stack[s1[0]][0]
+494  push [3]
+497  push "a"
+499  pop 1; push [stack[s2][0], s1]
+500  push 2
+502  add s2, s1
+503  pop 1; push s1[0][s1[1]]
+504  cmp s2, s1
+505  not s1
+506  jnz 511
+508  pop 1
+509  jmp 631
+511  push [6]
+513  pop 1; push s1
+514  push stack[s1[0]][0]
+526  push "BigInt"
+528  pop 1; push [window, s1]
+542  push "6878794"
+544  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+546  pop 1; mul s2, s1
+547  mov stack[s2[0]][0], s1
+548  swap stack[-2], s1
+550  push [6]
+552  pop 1; push s1
+553  push stack[s1[0]][0]
+565  push "BigInt"
+567  pop 1; push [window, s1]
+599  push "1125899906842597"
+601  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+603  mod s2, s1
+604  mov stack[s2[0]][0], s1
+605  swap stack[-2], s1
+607  push [5]
+609  pop 1; push s1
+610  push stack[s1[0]][0]
+611  pop 1; push s1
+612  swap stack[-3], s1
+614  swap stack[-2], s1
+616  push 1
+619  mov stack[s2[0]][0], s1
+620  pop 1
+621  mov s1, 0
+623  swap stack[-2], s1
+625  or s1, s2
+626  pop 5
+628  pop 1
+629  jmp 491
+631  push [5]
+633  push 0
+635  mov stack[s2[0]][0], s1
+636  swap stack[-2], s1
+638  pop 1
+639  pop 1
+640  push [5]
+642  push stack[s1[0]][0]
+643  push [3]
+646  push "a"
+648  pop 1; push [stack[s2][0], s1]
+649  push 3
+651  add s2, s1
+652  pop 1; push s1[0][s1[1]]
+653  cmp s2, s1
+654  not s1
+655  jnz 660
+657  pop 1
+658  jmp 780
+660  push [6]
+662  pop 1; push s1
+663  push stack[s1[0]][0]
+675  push "BigInt"
+677  pop 1; push [window, s1]
+691  push "7546364"
+693  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+695  pop 1; mul s2, s1
+696  mov stack[s2[0]][0], s1
+697  swap stack[-2], s1
+699  push [6]
+701  pop 1; push s1
+702  push stack[s1[0]][0]
+714  push "BigInt"
+716  pop 1; push [window, s1]
+748  push "1125899906842597"
+750  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+752  mod s2, s1
+753  mov stack[s2[0]][0], s1
+754  swap stack[-2], s1
+756  push [5]
+758  pop 1; push s1
+759  push stack[s1[0]][0]
+760  pop 1; push s1
+761  swap stack[-3], s1
+763  swap stack[-2], s1
+765  push 1
+768  mov stack[s2[0]][0], s1
+769  pop 1
+770  mov s1, 0
+772  swap stack[-2], s1
+774  or s1, s2
+775  pop 5
+777  pop 1
+778  jmp 640
+780  push [4]
+782  pop 1; push s1
+783  push stack[s1[0]][0]
+784  push stack[6][0]
+787  mov stack[s2[0]][0], s1
+788  swap stack[-2], s1
+790  push [4]
+792  pop 1; push s1
+793  push stack[s1[0]][0]
+805  push "BigInt"
+807  pop 1; push [window, s1]
+839  push "1125899906842597"
+841  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+843  mod s2, s1
+844  mov stack[s2[0]][0], s1
+845  swap stack[-2], s1
+847  push [5]
+849  push 0
+851  mov stack[s2[0]][0], s1
+852  swap stack[-2], s1
+854  push [6]
+867  push "BigInt"
+869  pop 1; push [window, s1]
+870  push 1
+872  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+874  mov stack[s2[0]][0], s1
+875  swap stack[-2], s1
+877  pop 8
+879  push [5]
+881  push stack[s1[0]][0]
+882  push [3]
+885  push "a"
+887  pop 1; push [stack[s2][0], s1]
+888  push 4
+890  add s2, s1
+891  pop 1; push s1[0][s1[1]]
+892  cmp s2, s1
+893  not s1
+894  jnz 899
+896  pop 1
+897  jmp 1019
+899  push [6]
+901  pop 1; push s1
+902  push stack[s1[0]][0]
+914  push "BigInt"
+916  pop 1; push [window, s1]
+930  push "2991919"
+932  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+934  pop 1; mul s2, s1
+935  mov stack[s2[0]][0], s1
+936  swap stack[-2], s1
+938  push [6]
+940  pop 1; push s1
+941  push stack[s1[0]][0]
+953  push "BigInt"
+955  pop 1; push [window, s1]
+987  push "1125899906842597"
+989  pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+991  mod s2, s1
+992  mov stack[s2[0]][0], s1
+993  swap stack[-2], s1
+995  push [5]
+997  pop 1; push s1
+998  push stack[s1[0]][0]
+999  pop 1; push s1
+1000 swap stack[-3], s1
+1002 swap stack[-2], s1
+1004 push 1
+1007 mov stack[s2[0]][0], s1
+1008 pop 1
+1009 mov s1, 0
+1011 swap stack[-2], s1
+1013 or s1, s2
+1014 pop 5
+1016 pop 1
+1017 jmp 879
+1019 push [5]
+1021 push 0
+1023 mov stack[s2[0]][0], s1
+1024 swap stack[-2], s1
+1026 pop 1
+1027 pop 1
+1028 push [5]
+1030 push stack[s1[0]][0]
+1031 push [3]
+1034 push "a"
+1036 pop 1; push [stack[s2][0], s1]
+1037 push 5
+1039 add s2, s1
+1040 pop 1; push s1[0][s1[1]]
+1041 cmp s2, s1
+1042 not s1
+1043 jnz 1048
+1045 pop 1
+1046 jmp 1168
+1048 push [6]
+1050 pop 1; push s1
+1051 push stack[s1[0]][0]
+1063 push "BigInt"
+1065 pop 1; push [window, s1]
+1079 push "2182643"
+1081 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1083 pop 1; mul s2, s1
+1084 mov stack[s2[0]][0], s1
+1085 swap stack[-2], s1
+1087 push [6]
+1089 pop 1; push s1
+1090 push stack[s1[0]][0]
+1102 push "BigInt"
+1104 pop 1; push [window, s1]
+1136 push "1125899906842597"
+1138 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1140 mod s2, s1
+1141 mov stack[s2[0]][0], s1
+1142 swap stack[-2], s1
+1144 push [5]
+1146 pop 1; push s1
+1147 push stack[s1[0]][0]
+1148 pop 1; push s1
+1149 swap stack[-3], s1
+1151 swap stack[-2], s1
+1153 push 1
+1156 mov stack[s2[0]][0], s1
+1157 pop 1
+1158 mov s1, 0
+1160 swap stack[-2], s1
+1162 or s1, s2
+1163 pop 5
+1165 pop 1
+1166 jmp 1028
+1168 push [4]
+1170 pop 1; push s1
+1171 push stack[s1[0]][0]
+1172 push stack[6][0]
+1175 mov stack[s2[0]][0], s1
+1176 swap stack[-2], s1
+1178 push [4]
+1180 pop 1; push s1
+1181 push stack[s1[0]][0]
+1193 push "BigInt"
+1195 pop 1; push [window, s1]
+1227 push "1125899906842597"
+1229 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1231 mod s2, s1
+1232 mov stack[s2[0]][0], s1
+1233 swap stack[-2], s1
+1235 push [5]
+1237 push 0
+1239 mov stack[s2[0]][0], s1
+1240 swap stack[-2], s1
+1242 push [6]
+1255 push "BigInt"
+1257 pop 1; push [window, s1]
+1258 push 1
+1260 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1262 mov stack[s2[0]][0], s1
+1263 swap stack[-2], s1
+1265 pop 8
+1267 push [5]
+1269 push stack[s1[0]][0]
+1270 push [3]
+1273 push "a"
+1275 pop 1; push [stack[s2][0], s1]
+1276 push 6
+1278 add s2, s1
+1279 pop 1; push s1[0][s1[1]]
+1280 cmp s2, s1
+1281 not s1
+1282 jnz 1287
+1284 pop 1
+1285 jmp 1407
+1287 push [6]
+1289 pop 1; push s1
+1290 push stack[s1[0]][0]
+1302 push "BigInt"
+1304 pop 1; push [window, s1]
+1318 push "7930094"
+1320 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1322 pop 1; mul s2, s1
+1323 mov stack[s2[0]][0], s1
+1324 swap stack[-2], s1
+1326 push [6]
+1328 pop 1; push s1
+1329 push stack[s1[0]][0]
+1341 push "BigInt"
+1343 pop 1; push [window, s1]
+1375 push "1125899906842597"
+1377 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1379 mod s2, s1
+1380 mov stack[s2[0]][0], s1
+1381 swap stack[-2], s1
+1383 push [5]
+1385 pop 1; push s1
+1386 push stack[s1[0]][0]
+1387 pop 1; push s1
+1388 swap stack[-3], s1
+1390 swap stack[-2], s1
+1392 push 1
+1395 mov stack[s2[0]][0], s1
+1396 pop 1
+1397 mov s1, 0
+1399 swap stack[-2], s1
+1401 or s1, s2
+1402 pop 5
+1404 pop 1
+1405 jmp 1267
+1407 push [5]
+1409 push 0
+1411 mov stack[s2[0]][0], s1
+1412 swap stack[-2], s1
+1414 pop 1
+1415 pop 1
+1416 push [5]
+1418 push stack[s1[0]][0]
+1419 push [3]
+1422 push "a"
+1424 pop 1; push [stack[s2][0], s1]
+1425 push 7
+1427 add s2, s1
+1428 pop 1; push s1[0][s1[1]]
+1429 cmp s2, s1
+1430 not s1
+1431 jnz 1436
+1433 pop 1
+1434 jmp 1556
+1436 push [6]
+1438 pop 1; push s1
+1439 push stack[s1[0]][0]
+1451 push "BigInt"
+1453 pop 1; push [window, s1]
+1467 push "1444861"
+1469 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1471 pop 1; mul s2, s1
+1472 mov stack[s2[0]][0], s1
+1473 swap stack[-2], s1
+1475 push [6]
+1477 pop 1; push s1
+1478 push stack[s1[0]][0]
+1490 push "BigInt"
+1492 pop 1; push [window, s1]
+1524 push "1125899906842597"
+1526 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1528 mod s2, s1
+1529 mov stack[s2[0]][0], s1
+1530 swap stack[-2], s1
+1532 push [5]
+1534 pop 1; push s1
+1535 push stack[s1[0]][0]
+1536 pop 1; push s1
+1537 swap stack[-3], s1
+1539 swap stack[-2], s1
+1541 push 1
+1544 mov stack[s2[0]][0], s1
+1545 pop 1
+1546 mov s1, 0
+1548 swap stack[-2], s1
+1550 or s1, s2
+1551 pop 5
+1553 pop 1
+1554 jmp 1416
+1556 push [4]
+1558 pop 1; push s1
+1559 push stack[s1[0]][0]
+1560 push stack[6][0]
+1563 mov stack[s2[0]][0], s1
+1564 swap stack[-2], s1
+1566 push [4]
+1568 pop 1; push s1
+1569 push stack[s1[0]][0]
+1581 push "BigInt"
+1583 pop 1; push [window, s1]
+1615 push "1125899906842597"
+1617 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1619 mod s2, s1
+1620 mov stack[s2[0]][0], s1
+1621 swap stack[-2], s1
+1623 push [5]
+1625 push 0
+1627 mov stack[s2[0]][0], s1
+1628 swap stack[-2], s1
+1630 push [6]
+1643 push "BigInt"
+1645 pop 1; push [window, s1]
+1646 push 1
+1648 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1650 mov stack[s2[0]][0], s1
+1651 swap stack[-2], s1
+1653 pop 8
+1655 push [5]
+1657 push stack[s1[0]][0]
+1658 push [3]
+1661 push "a"
+1663 pop 1; push [stack[s2][0], s1]
+1664 push 8
+1666 add s2, s1
+1667 pop 1; push s1[0][s1[1]]
+1668 cmp s2, s1
+1669 not s1
+1670 jnz 1675
+1672 pop 1
+1673 jmp 1795
+1675 push [6]
+1677 pop 1; push s1
+1678 push stack[s1[0]][0]
+1690 push "BigInt"
+1692 pop 1; push [window, s1]
+1706 push "5596024"
+1708 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1710 pop 1; mul s2, s1
+1711 mov stack[s2[0]][0], s1
+1712 swap stack[-2], s1
+1714 push [6]
+1716 pop 1; push s1
+1717 push stack[s1[0]][0]
+1729 push "BigInt"
+1731 pop 1; push [window, s1]
+1763 push "1125899906842597"
+1765 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1767 mod s2, s1
+1768 mov stack[s2[0]][0], s1
+1769 swap stack[-2], s1
+1771 push [5]
+1773 pop 1; push s1
+1774 push stack[s1[0]][0]
+1775 pop 1; push s1
+1776 swap stack[-3], s1
+1778 swap stack[-2], s1
+1780 push 1
+1783 mov stack[s2[0]][0], s1
+1784 pop 1
+1785 mov s1, 0
+1787 swap stack[-2], s1
+1789 or s1, s2
+1790 pop 5
+1792 pop 1
+1793 jmp 1655
+1795 push [5]
+1797 push 0
+1799 mov stack[s2[0]][0], s1
+1800 swap stack[-2], s1
+1802 pop 1
+1803 pop 1
+1804 push [5]
+1806 push stack[s1[0]][0]
+1807 push [3]
+1810 push "a"
+1812 pop 1; push [stack[s2][0], s1]
+1813 push 9
+1815 add s2, s1
+1816 pop 1; push s1[0][s1[1]]
+1817 cmp s2, s1
+1818 not s1
+1819 jnz 1824
+1821 pop 1
+1822 jmp 1944
+1824 push [6]
+1826 pop 1; push s1
+1827 push stack[s1[0]][0]
+1839 push "BigInt"
+1841 pop 1; push [window, s1]
+1855 push "6246873"
+1857 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1859 pop 1; mul s2, s1
+1860 mov stack[s2[0]][0], s1
+1861 swap stack[-2], s1
+1863 push [6]
+1865 pop 1; push s1
+1866 push stack[s1[0]][0]
+1878 push "BigInt"
+1880 pop 1; push [window, s1]
+1912 push "1125899906842597"
+1914 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+1916 mod s2, s1
+1917 mov stack[s2[0]][0], s1
+1918 swap stack[-2], s1
+1920 push [5]
+1922 pop 1; push s1
+1923 push stack[s1[0]][0]
+1924 pop 1; push s1
+1925 swap stack[-3], s1
+1927 swap stack[-2], s1
+1929 push 1
+1932 mov stack[s2[0]][0], s1
+1933 pop 1
+1934 mov s1, 0
+1936 swap stack[-2], s1
+1938 or s1, s2
+1939 pop 5
+1941 pop 1
+1942 jmp 1804
+1944 push [4]
+1946 pop 1; push s1
+1947 push stack[s1[0]][0]
+1948 push stack[6][0]
+1951 mov stack[s2[0]][0], s1
+1952 swap stack[-2], s1
+1954 push [4]
+1956 pop 1; push s1
+1957 push stack[s1[0]][0]
+1969 push "BigInt"
+1971 pop 1; push [window, s1]
+2003 push "1125899906842597"
+2005 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+2007 mod s2, s1
+2008 mov stack[s2[0]][0], s1
+2009 swap stack[-2], s1
+2011 push [5]
+2013 push 0
+2015 mov stack[s2[0]][0], s1
+2016 swap stack[-2], s1
+2018 push [6]
+2031 push "BigInt"
+2033 pop 1; push [window, s1]
+2034 push 1
+2036 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+2038 mov stack[s2[0]][0], s1
+2039 swap stack[-2], s1
+2041 pop 8
+2043 push [5]
+2045 push stack[s1[0]][0]
+2046 push [3]
+2049 push "a"
+2051 pop 1; push [stack[s2][0], s1]
+2052 push 10
+2054 add s2, s1
+2055 pop 1; push s1[0][s1[1]]
+2056 cmp s2, s1
+2057 not s1
+2058 jnz 2063
+2060 pop 1
+2061 jmp 2183
+2063 push [6]
+2065 pop 1; push s1
+2066 push stack[s1[0]][0]
+2078 push "BigInt"
+2080 pop 1; push [window, s1]
+2094 push "8726909"
+2096 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+2098 pop 1; mul s2, s1
+2099 mov stack[s2[0]][0], s1
+2100 swap stack[-2], s1
+2102 push [6]
+2104 pop 1; push s1
+2105 push stack[s1[0]][0]
+2117 push "BigInt"
+2119 pop 1; push [window, s1]
+2151 push "1125899906842597"
+2153 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+2155 mod s2, s1
+2156 mov stack[s2[0]][0], s1
+2157 swap stack[-2], s1
+2159 push [5]
+2161 pop 1; push s1
+2162 push stack[s1[0]][0]
+2163 pop 1; push s1
+2164 swap stack[-3], s1
+2166 swap stack[-2], s1
+2168 push 1
+2171 mov stack[s2[0]][0], s1
+2172 pop 1
+2173 mov s1, 0
+2175 swap stack[-2], s1
+2177 or s1, s2
+2178 pop 5
+2180 pop 1
+2181 jmp 2043
+2183 push [5]
+2185 push 0
+2187 mov stack[s2[0]][0], s1
+2188 swap stack[-2], s1
+2190 pop 1
+2191 pop 1
+2192 push [5]
+2194 push stack[s1[0]][0]
+2195 push [3]
+2198 push "a"
+2200 pop 1; push [stack[s2][0], s1]
+2201 push 11
+2203 add s2, s1
+2204 pop 1; push s1[0][s1[1]]
+2205 cmp s2, s1
+2206 not s1
+2207 jnz 2212
+2209 pop 1
+2210 jmp 2332
+2212 push [6]
+2214 pop 1; push s1
+2215 push stack[s1[0]][0]
+2227 push "BigInt"
+2229 pop 1; push [window, s1]
+2243 push "5811773"
+2245 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+2247 pop 1; mul s2, s1
+2248 mov stack[s2[0]][0], s1
+2249 swap stack[-2], s1
+2251 push [6]
+2253 pop 1; push s1
+2254 push stack[s1[0]][0]
+2266 push "BigInt"
+2268 pop 1; push [window, s1]
+2300 push "1125899906842597"
+2302 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+2304 mod s2, s1
+2305 mov stack[s2[0]][0], s1
+2306 swap stack[-2], s1
+2308 push [5]
+2310 pop 1; push s1
+2311 push stack[s1[0]][0]
+2312 pop 1; push s1
+2313 swap stack[-3], s1
+2315 swap stack[-2], s1
+2317 push 1
+2320 mov stack[s2[0]][0], s1
+2321 pop 1
+2322 mov s1, 0
+2324 swap stack[-2], s1
+2326 or s1, s2
+2327 pop 5
+2329 pop 1
+2330 jmp 2192
+2332 push [4]
+2334 pop 1; push s1
+2335 push stack[s1[0]][0]
+2336 push stack[6][0]
+2339 mov stack[s2[0]][0], s1
+2340 swap stack[-2], s1
+2342 push [4]
+2344 pop 1; push s1
+2345 push stack[s1[0]][0]
+2357 push "BigInt"
+2359 pop 1; push [window, s1]
+2391 push "1125899906842597"
+2393 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+2395 mod s2, s1
+2396 mov stack[s2[0]][0], s1
+2397 swap stack[-2], s1
+2414 push "parseInt"
+2416 pop 1; push [window, s1]
+2417 push stack[4][0]
+2419 pop 1; push s1[0][s1[1]](s1[0], stack[-1:])
+2421 return true
+2422 push undefine
+2423 return true
+2424 pop 4
+2426 exit define_code
+2428 or s1, s2
+2430 exit define_code
+2431 mov s2[0][s2[1]], s1
+2432 swap stack[-2], s1
+2434 push undefine
+2435 return true
+2436 pop 1
+2437 pop 1
