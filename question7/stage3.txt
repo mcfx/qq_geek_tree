@@ -1,0 +1,709 @@
+0      resize stack 8
+2      push 2                           ; {9} 2 - -
+4      pop 1: push [s1]                 ; {9} [2] - -
+5      or stack[s1[0]], []              ; {9} [2] - -
+6      push 3                           ; {10} 3 [2] -
+8      pop 1: push [s1]                 ; {10} [3] [2] -
+9      or stack[s1[0]], []              ; {10} [3] [2] -
+10     push 4                           ; {11} 4 [3] [2]
+12     pop 1: push [s1]                 ; {11} [4] [3] [2]
+13     or stack[s1[0]], []              ; {11} [4] [3] [2]
+14     push 5                           ; {12} 5 [4] [3]
+16     pop 1: push [s1]                 ; {12} [5] [4] [3]
+17     or stack[s1[0]], []              ; {12} [5] [4] [3]
+18     push 6                           ; {13} 6 [5] [4]
+20     pop 1: push [s1]                 ; {13} [6] [5] [4]
+21     or stack[s1[0]], []              ; {13} [6] [5] [4]
+22     push 7                           ; {14} 7 [6] [5]
+24     pop 1: push [s1]                 ; {14} [7] [6] [5]
+25     or stack[s1[0]], []              ; {14} [7] [6] [5]
+26     pop 6
+28     push true                        ; {9} True - -
+29     push ""                          ; {10} '' True -
+30     push 28                          ; {11} 28 '' True
+32     push 13                          ; {12} 13 28 ''
+34     pop 1: sub s2, s1                ; {11} 15 '' True
+35     concat s2, chr(s1 + 55)          ; {11} 15 'F' True
+37     mov s1, 13                       ; {11} 13 'F' True
+39     push 12                          ; {12} 12 13 'F'
+41     pop 1: add s2, s1                ; {11} 25 'F' True
+42     concat s2, chr(s1 + 26)          ; {11} 25 'F3' True
+44     mov s1, 9                        ; {11} 9 'F3' True
+46     push 6                           ; {12} 6 9 'F3'
+48     pop 1: add s2, s1                ; {11} 15 'F3' True
+49     concat s2, chr(s1 + 51)          ; {11} 15 'F3B' True
+51     mov s1, 0                        ; {11} 0 'F3B' True
+53     concat s2, chr(s1 + 57)          ; {11} 0 'F3B9' True
+55     mov s1, 25                       ; {11} 25 'F3B9' True
+57     push 34                          ; {12} 34 25 'F3B9'
+59     pop 1: add s2, s1                ; {11} 59 'F3B9' True
+60     concat s2, chr(s1 + 7)           ; {11} 59 'F3B9B' True
+62     mov s1, 30                       ; {11} 30 'F3B9B' True
+64     push 7                           ; {12} 7 30 'F3B9B'
+66     pop 1: add s2, s1                ; {11} 37 'F3B9B' True
+67     concat s2, chr(s1 + 19)          ; {11} 37 'F3B9B8' True
+69     mov s1, 28                       ; {11} 28 'F3B9B8' True
+71     push 19                          ; {12} 19 28 'F3B9B8'
+73     pop 1: add s2, s1                ; {11} 47 'F3B9B8' True
+74     concat s2, chr(s1 + 4)           ; {11} 47 'F3B9B83' True
+76     mov s1, 5                        ; {11} 5 'F3B9B83' True
+78     concat s2, chr(s1 + 45)          ; {11} 5 'F3B9B832' True
+80     pop 1                            ; {10} 'F3B9B832' True -
+81     pop 1: push [window, s1]         ; {10} - True -
+82     jmp 1046                         ; {10} - True -
+1046   define_code 85, 0, 7    [3 4 5 6 7 8 9] ; {11} 'CODE_85' - True
+1057   push 5                           ; {12} 5 'CODE_85' -
+1059   pop 1: push [s1]                 ; {12} [5] 'CODE_85' -
+1060   push 12                          ; {13} 12 [5] 'CODE_85'
+1062   push 22                          ; {14} 22 12 [5]
+1064   push 23                          ; {15} 23 22 12
+1066   pop 1: mul s2, s1                ; {14} 506 12 [5]
+1067   pop 1: add s2, s1                ; {13} 518 [5] 'CODE_85'
+1068   mov stack[s2[0]][0], s1          ; {13} 518 [5] 'CODE_85'
+1069   pop 1                            ; {12} [5] 'CODE_85' -
+1070   pop 1                            ; {11} 'CODE_85' - True
+1071   mov s2[0][s2[1]], s1             ; {11} 'CODE_85' - True
+1072   push undefined                   ; {12} - 'CODE_85' -
+1073   return true                      ; {12} - 'CODE_85' -
+
+85     resize stack 19
+87     push 2                           ; {20} 2 - -
+89     pop 1: push [s1]                 ; {20} [2] - -
+90     or stack[s1[0]], []              ; {20} [2] - -
+91     push 3                           ; {21} 3 [2] -
+93     pop 1: push [s1]                 ; {21} [3] [2] -
+94     or stack[s1[0]], []              ; {21} [3] [2] -
+95     push 4                           ; {22} 4 [3] [2]
+97     pop 1: push [s1]                 ; {22} [4] [3] [2]
+98     or stack[s1[0]], []              ; {22} [4] [3] [2]
+99     push 5                           ; {23} 5 [4] [3]
+101    pop 1: push [s1]                 ; {23} [5] [4] [3]
+102    or stack[s1[0]], []              ; {23} [5] [4] [3]
+103    push 6                           ; {24} 6 [5] [4]
+105    pop 1: push [s1]                 ; {24} [6] [5] [4]
+106    or stack[s1[0]], []              ; {24} [6] [5] [4]
+107    push 7                           ; {25} 7 [6] [5]
+109    pop 1: push [s1]                 ; {25} [7] [6] [5]
+110    or stack[s1[0]], []              ; {25} [7] [6] [5]
+111    push 8                           ; {26} 8 [7] [6]
+113    pop 1: push [s1]                 ; {26} [8] [7] [6]
+114    or stack[s1[0]], []              ; {26} [8] [7] [6]
+115    push 9                           ; {27} 9 [8] [7]
+117    pop 1: push [s1]                 ; {27} [9] [8] [7]
+118    or stack[s1[0]], []              ; {27} [9] [8] [7]
+119    push 10                          ; {28} 10 [9] [8]
+121    pop 1: push [s1]                 ; {28} [10] [9] [8]
+122    or stack[s1[0]], []              ; {28} [10] [9] [8]
+123    push 11                          ; {29} 11 [10] [9]
+125    pop 1: push [s1]                 ; {29} [11] [10] [9]
+126    or stack[s1[0]], []              ; {29} [11] [10] [9]
+127    push 12                          ; {30} 12 [11] [10]
+129    pop 1: push [s1]                 ; {30} [12] [11] [10]
+130    or stack[s1[0]], []              ; {30} [12] [11] [10]
+131    push 13                          ; {31} 13 [12] [11]
+133    pop 1: push [s1]                 ; {31} [13] [12] [11]
+134    or stack[s1[0]], []              ; {31} [13] [12] [11]
+135    push 14                          ; {32} 14 [13] [12]
+137    pop 1: push [s1]                 ; {32} [14] [13] [12]
+138    or stack[s1[0]], []              ; {32} [14] [13] [12]
+139    push 15                          ; {33} 15 [14] [13]
+141    pop 1: push [s1]                 ; {33} [15] [14] [13]
+142    or stack[s1[0]], []              ; {33} [15] [14] [13]
+143    push 16                          ; {34} 16 [15] [14]
+145    pop 1: push [s1]                 ; {34} [16] [15] [14]
+146    or stack[s1[0]], []              ; {34} [16] [15] [14]
+147    push 17                          ; {35} 17 [16] [15]
+149    pop 1: push [s1]                 ; {35} [17] [16] [15]
+150    or stack[s1[0]], []              ; {35} [17] [16] [15]
+151    push 18                          ; {36} 18 [17] [16]
+153    pop 1: push [s1]                 ; {36} [18] [17] [16]
+154    or stack[s1[0]], []              ; {36} [18] [17] [16]
+155    push 59                          ; {37} 59 [18] [17]
+157    push 44                          ; {38} 44 59 [18]
+159    pop 1: sub s2, s1                ; {37} 15 [18] [17]
+160    pop 1: push [s1]                 ; {37} [15] [18] [17]
+161    push undefined                   ; {38} - [15] [18]
+162    push 3                           ; {39} 3 - [15]
+164    pop 1: push [s1]                 ; {39} [3] - [15]
+165    push ""                          ; {40} '' [3] -
+166    push 41                          ; {41} 41 '' [3]
+168    push 44                          ; {42} 44 41 ''
+170    pop 1: add s2, s1                ; {41} 85 '' [3]
+171    concat s2, chr(s1 + 12)          ; {41} 85 'a' [3]
+173    pop 1                            ; {40} 'a' [3] -
+174    pop 2: push [stack[s2][0], s1]   ; {39} ['__STACK3', 'a'] - [15]
+175    push 10                          ; {40} 10 ['__STACK3', 'a'] -
+177    pop 1: push [s1]                 ; {40} [10] ['__STACK3', 'a'] -
+178    push 39                          ; {41} 39 [10] ['__STACK3', 'a']
+180    push 4                           ; {42} 4 39 [10]
+182    pop 1: add s2, s1                ; {41} 43 [10] ['__STACK3', 'a']
+183    mov stack[s2[0]][0], s1          ; {41} 43 [10] ['__STACK3', 'a']
+184    pop 1                            ; {40} [10] ['__STACK3', 'a'] -
+185    pop 1                            ; {39} ['__STACK3', 'a'] - [15]
+186    push ""                          ; {40} '' ['__STACK3', 'a'] -
+187    push 9                           ; {41} 9 '' ['__STACK3', 'a']
+189    push 50                          ; {42} 50 9 ''
+191    pop 1: add s2, s1                ; {41} 59 '' ['__STACK3', 'a']
+192    concat s2, chr(s1 + 56)          ; {41} 59 's' ['__STACK3', 'a']
+194    mov s1, 8                        ; {41} 8 's' ['__STACK3', 'a']
+196    push 76                          ; {42} 76 8 's'
+198    pop 1: add s2, s1                ; {41} 84 's' ['__STACK3', 'a']
+199    concat s2, chr(s1 + 24)          ; {41} 84 'sl' ['__STACK3', 'a']
+201    mov s1, 60                       ; {41} 60 'sl' ['__STACK3', 'a']
+203    push 40                          ; {42} 40 60 'sl'
+205    pop 1: add s2, s1                ; {41} 100 'sl' ['__STACK3', 'a']
+206    concat s2, chr(s1 + 5)           ; {41} 100 'sli' ['__STACK3', 'a']
+208    mov s1, 0                        ; {41} 0 'sli' ['__STACK3', 'a']
+210    push 81                          ; {42} 81 0 'sli'
+212    pop 1: add s2, s1                ; {41} 81 'sli' ['__STACK3', 'a']
+213    concat s2, chr(s1 + 18)          ; {41} 81 'slic' ['__STACK3', 'a']
+215    mov s1, 23                       ; {41} 23 'slic' ['__STACK3', 'a']
+217    push 1                           ; {42} 1 23 'slic'
+219    pop 1: add s2, s1                ; {41} 24 'slic' ['__STACK3', 'a']
+220    concat s2, chr(s1 + 77)          ; {41} 24 'slice' ['__STACK3', 'a']
+222    pop 1                            ; {40} 'slice' ['__STACK3', 'a'] -
+223    pop 2: push [s2[0][s2[1]], s1]   ; {39} - - [15]
+224    swap stack[-2], s1               ; {39} - - [15]
+226    mov s1, 0                        ; {39} 0 - [15]
+228    pop 1: pop 1: push s1[0][s1[1]](stack[-1:]) ; {38} - [15] [18]
+230    push 10                          ; {39} 10 - [15]
+232    pop 1: push [s1]                 ; {39} [10] - [15]
+233    push 13                          ; {40} 13 [10] -
+235    push 34                          ; {41} 34 13 [10]
+237    push 29                          ; {42} 29 34 13
+239    pop 1: mul s2, s1                ; {41} 986 13 [10]
+240    pop 1: add s2, s1                ; {40} 999 [10] -
+241    mov stack[s2[0]][0], s1          ; {40} 999 [10] -
+242    pop 1                            ; {39} [10] - [15]
+243    pop 1                            ; {38} - [15] [18]
+244    mov stack[s2[0]][0], s1          ; {38} - [15] [18]
+245    push 38                          ; {39} 38 - [15]
+247    push 22                          ; {40} 22 38 -
+249    pop 1: sub s2, s1                ; {39} 16 - [15]
+250    pop 1: push [s1]                 ; {39} [16] - [15]
+251    push null                        ; {40} '__NULL' [16] -
+252    push 5                           ; {41} 5 '__NULL' [16]
+254    pop 1: push [s1]                 ; {41} [5] '__NULL' [16]
+255    pop 1: push stack[s1[0]][0]      ; {41} - '__NULL' [16]
+256    pop 0: push s1(stack[-0:])       ; {42} - - '__NULL'
+258    swap stack[-2], s1               ; {42} - - '__NULL'
+260    pop 1                            ; {41} - '__NULL' [16]
+261    mov stack[s2[0]][0], s1          ; {41} - '__NULL' [16]
+262    push 38                          ; {42} 38 - '__NULL'
+264    push 21                          ; {43} 21 38 -
+266    pop 1: sub s2, s1                ; {42} 17 - '__NULL'
+267    pop 1: push [s1]                 ; {42} [17] - '__NULL'
+268    push 0                           ; {43} 0 [17] -
+270    mov stack[s2[0]][0], s1          ; {43} 0 [17] -
+271    pop 23                           ; {20} [2] - -
+273    push 63                          ; {21} 63 [2] -
+275    push 48                          ; {22} 48 63 [2]
+277    pop 1: sub s2, s1                ; {21} 15 [2] -
+278    pop 1: push [s1]                 ; {21} [15] [2] -
+279    push ""                          ; {22} '' [15] [2]
+280    push 5                           ; {23} 5 '' [15]
+282    concat s2, chr(s1 + 103)         ; {23} 5 'l' [15]
+284    mov s1, 3                        ; {23} 3 'l' [15]
+286    concat s2, chr(s1 + 98)          ; {23} 3 'le' [15]
+288    mov s1, 16                       ; {23} 16 'le' [15]
+290    push 65                          ; {24} 65 16 'le'
+292    pop 1: add s2, s1                ; {23} 81 'le' [15]
+293    concat s2, chr(s1 + 29)          ; {23} 81 'len' [15]
+295    mov s1, 56                       ; {23} 56 'len' [15]
+297    push 1                           ; {24} 1 56 'len'
+299    pop 1: sub s2, s1                ; {23} 55 'len' [15]
+300    concat s2, chr(s1 + 48)          ; {23} 55 'leng' [15]
+302    mov s1, 55                       ; {23} 55 'leng' [15]
+304    push 24                          ; {24} 24 55 'leng'
+306    pop 1: sub s2, s1                ; {23} 31 'leng' [15]
+307    concat s2, chr(s1 + 85)          ; {23} 31 'lengt' [15]
+309    mov s1, 24                       ; {23} 24 'lengt' [15]
+311    push 21                          ; {24} 21 24 'lengt'
+313    pop 1: add s2, s1                ; {23} 45 'lengt' [15]
+314    concat s2, chr(s1 + 59)          ; {23} 45 'length' [15]
+316    pop 1                            ; {22} 'length' [15] [2]
+317    pop 2: push [stack[s2][0], s1]   ; {21} ['__STACK15', 'length'] [2] -
+318    push 13                          ; {22} 13 ['__STACK15', 'length'] [2]
+320    pop 1: push [s1]                 ; {22} [13] ['__STACK15', 'length'] [2]
+321    push 12                          ; {23} 12 [13] ['__STACK15', 'length']
+323    push 17                          ; {24} 17 12 [13]
+325    push 20                          ; {25} 20 17 12
+327    pop 1: mul s2, s1                ; {24} 340 12 [13]
+328    pop 1: add s2, s1                ; {23} 352 [13] ['__STACK15', 'length']
+329    mov stack[s2[0]][0], s1          ; {23} 352 [13] ['__STACK15', 'length']
+330    pop 1                            ; {22} [13] ['__STACK15', 'length'] [2]
+331    pop 1                            ; {21} ['__STACK15', 'length'] [2] -
+332    pop 1: push s1[0][s1[1]]         ; {21} - [2] -
+333    push 29                          ; {22} 29 - [2]
+335    push 13                          ; {23} 13 29 -
+337    pop 1: sub s2, s1                ; {22} 16 - [2]
+338    pop 1: cmpge s2, s1              ; {21} - [2] -
+339    not s1                           ; {22} - - [2]
+340    push 12                          ; {23} 12 - -
+342    pop 1: push [s1]                 ; {23} [12] - -
+343    push 17                          ; {24} 17 [12] -
+345    push 19                          ; {25} 19 17 [12]
+347    push 24                          ; {26} 24 19 17
+349    pop 1: mul s2, s1                ; {25} 456 17 [12]
+350    pop 1: add s2, s1                ; {24} 473 [12] -
+351    mov stack[s2[0]][0], s1          ; {24} 473 [12] -
+352    pop 1                            ; {23} [12] - -
+353    pop 1                            ; {22} - - [2]
+354    jnz 360                          ; {22} - - [2]
+356    pop 1                            ; {21} - [2] -
+357    jmp 394                          ; {21} - [2] -
+394    push undefined                   ; {22} - - [2]
+395    push 51                          ; {23} 51 - -
+397    push 35                          ; {24} 35 51 -
+399    pop 1: sub s2, s1                ; {23} 16 - -
+400    pop 1: push [s1]                 ; {23} [16] - -
+401    pop 1: push stack[s1[0]][0]
+402    push 0                           ; {24} 0 - -
+404    pop 1: cmpe s2, s1
+405    not s1
+406    swap stack[-2], s1
+408    pop 1
+409    jnz 415
+411    pop 1                            ; {22} - - [2]
+412    jmp 698                          ; {22} - - [2]
+698    push undefined
+699    push 13                          ; {24} 13 - -
+701    push 3                           ; {25} 3 13 -
+703    pop 1: add s2, s1                ; {24} 16 - -
+704    pop 1: push [s1]                 ; {24} [16] - -
+705    pop 1: push stack[s1[0]][0]
+706    push 0                           ; {25} 0 - -
+708    pop 1: cmpge s2, s1
+709    not s1
+710    swap stack[-2], s1
+712    pop 1
+713    jnz 719
+715    pop 1
+716    jmp 753
+753    push undefined
+754    push true                        ; {25} True - -
+755    push false                       ; {26} False True -
+756    push true                        ; {27} True False True
+757    push 42                          ; {28} 42 True False
+759    push 31                          ; {29} 31 42 True
+761    pop 1: add s2, s1                ; {28} 73 True False
+762    push undefined                   ; {29} - 73 True
+763    push ""                          ; {30} '' - 73
+764    push 33                          ; {31} 33 '' -
+766    push 39                          ; {32} 39 33 ''
+768    pop 1: add s2, s1                ; {31} 72 '' -
+769    concat s2, chr(s1 + 11)          ; {31} 72 'S' -
+771    mov s1, 50                       ; {31} 50 'S' -
+773    push 53                          ; {32} 53 50 'S'
+775    pop 1: add s2, s1                ; {31} 103 'S' -
+776    concat s2, chr(s1 + 13)          ; {31} 103 'St' -
+778    mov s1, 23                       ; {31} 23 'St' -
+780    push 58                          ; {32} 58 23 'St'
+782    pop 1: add s2, s1                ; {31} 81 'St' -
+783    concat s2, chr(s1 + 33)          ; {31} 81 'Str' -
+785    mov s1, 50                       ; {31} 50 'Str' -
+787    push 34                          ; {32} 34 50 'Str'
+789    pop 1: add s2, s1                ; {31} 84 'Str' -
+790    concat s2, chr(s1 + 21)          ; {31} 84 'Stri' -
+792    mov s1, 10                       ; {31} 10 'Stri' -
+794    push 63                          ; {32} 63 10 'Stri'
+796    pop 1: add s2, s1                ; {31} 73 'Stri' -
+797    concat s2, chr(s1 + 37)          ; {31} 73 'Strin' -
+799    mov s1, 9                        ; {31} 9 'Strin' -
+801    push 44                          ; {32} 44 9 'Strin'
+803    pop 1: add s2, s1                ; {31} 53 'Strin' -
+804    concat s2, chr(s1 + 50)          ; {31} 53 'String' -
+806    pop 1                            ; {30} 'String' - 73
+807    pop 1: push [window, s1]         ; {30} - - 73
+808    push ""                          ; {31} '' - -
+809    push 36                          ; {32} 36 '' -
+811    push 64                          ; {33} 64 36 ''
+813    pop 1: add s2, s1                ; {32} 100 '' -
+814    concat s2, chr(s1 + 2)           ; {32} 100 'f' -
+816    mov s1, 38                       ; {32} 38 'f' -
+818    push 4                           ; {33} 4 38 'f'
+820    pop 1: add s2, s1                ; {32} 42 'f' -
+821    concat s2, chr(s1 + 72)          ; {32} 42 'fr' -
+823    mov s1, 12                       ; {32} 12 'fr' -
+825    push 14                          ; {33} 14 12 'fr'
+827    pop 1: add s2, s1                ; {32} 26 'fr' -
+828    concat s2, chr(s1 + 85)          ; {32} 26 'fro' -
+830    mov s1, 12                       ; {32} 12 'fro' -
+832    push 89                          ; {33} 89 12 'fro'
+834    pop 1: add s2, s1                ; {32} 101 'fro' -
+835    concat s2, chr(s1 + 8)           ; {32} 101 'from' -
+837    mov s1, 9                        ; {32} 9 'from' -
+839    push 20                          ; {33} 20 9 'from'
+841    pop 1: add s2, s1                ; {32} 29 'from' -
+842    concat s2, chr(s1 + 38)          ; {32} 29 'fromC' -
+844    mov s1, 62                       ; {32} 62 'fromC' -
+846    push 22                          ; {33} 22 62 'fromC'
+848    pop 1: add s2, s1                ; {32} 84 'fromC' -
+849    concat s2, chr(s1 + 20)          ; {32} 84 'fromCh' -
+851    mov s1, 33                       ; {32} 33 'fromCh' -
+853    push s1                          ; {33} 33 33 'fromCh'
+854    pop 1: add s2, s1                ; {32} 66 'fromCh' -
+855    concat s2, chr(s1 + 31)          ; {32} 66 'fromCha' -
+857    mov s1, 7                        ; {32} 7 'fromCha' -
+859    push 74                          ; {33} 74 7 'fromCha'
+861    pop 1: add s2, s1                ; {32} 81 'fromCha' -
+862    concat s2, chr(s1 + 33)          ; {32} 81 'fromChar' -
+864    mov s1, 29                       ; {32} 29 'fromChar' -
+866    concat s2, chr(s1 + 38)          ; {32} 29 'fromCharC' -
+868    mov s1, 55                       ; {32} 55 'fromCharC' -
+870    push 2                           ; {33} 2 55 'fromCharC'
+872    pop 1: add s2, s1                ; {32} 57 'fromCharC' -
+873    concat s2, chr(s1 + 54)          ; {32} 57 'fromCharCo' -
+875    mov s1, 45                       ; {32} 45 'fromCharCo' -
+877    concat s2, chr(s1 + 55)          ; {32} 45 'fromCharCod' -
+879    mov s1, 34                       ; {32} 34 'fromCharCod' -
+881    push 6                           ; {33} 6 34 'fromCharCod'
+883    pop 1: sub s2, s1                ; {32} 28 'fromCharCod' -
+884    concat s2, chr(s1 + 73)          ; {32} 28 'fromCharCode' -
+886    pop 1                            ; {31} 'fromCharCode' - -
+887    pop 2: push [s2[0][s2[1]], s1]   ; {30} - - 73
+888    swap stack[-2], s1               ; {30} - - 73
+890    mov s1, 5                        ; {30} 5 - 73
+892    push 97                          ; {31} 97 5 -
+894    pop 1: add s2, s1                ; {30} 102 - 73
+895    pop 1: pop 1: push s1[0][s1[1]](stack[-1:]) ; {29} - 73 True
+897    swap stack[-2], s1               ; {29} 73 - True
+899    push 0                           ; {30} 0 73 -
+901    push 103                         ; {31} 103 0 73
+903    pop 1: add s2, s1                ; {30} 103 73 -
+904    pop 1: shr s2, s1                ; {29} 0 - True
+905    pop 1                            ; {28} - True False
+906    push ""                          ; {29} '' - True
+907    push 46                          ; {30} 46 '' -
+909    push 3                           ; {31} 3 46 ''
+911    pop 1: add s2, s1                ; {30} 49 '' -
+912    concat s2, chr(s1 + 59)          ; {30} 49 'l' -
+914    pop 1                            ; {29} 'l' - True
+915    pop 1: add s2, s1                ; {28} - True False
+916    swap stack[-2], s1               ; {28} True - False
+918    pop 1                            ; {27} - False True
+919    push undefined                   ; {28} - - False
+920    push 7                           ; {29} 7 - -
+922    pop 1: push [s1]                 ; {29} [7] - -
+923    pop 1: push stack[s1[0]][0]
+924    push 4                           ; {30} 4 - -
+926    push 11                          ; {31} 11 4 -
+928    pop 1: add s2, s1                ; {30} 15 - -
+929    pop 1: push [s1]                 ; {30} [15] - -
+930    pop 1: push stack[s1[0]][0]
+931    push 41                          ; {31} 41 - -
+933    push 24                          ; {32} 24 41 -
+935    pop 1: sub s2, s1                ; {31} 17 - -
+936    pop 1: push [s1]                 ; {31} [17] - -
+937    pop 1: push stack[s1[0]][0]
+938    pop 2: push s1(stack[-2:])
+940    swap stack[-2], s1
+942    pop 1
+943    pop 1: add s2, s1                ; {28} - - False
+944    swap stack[-2], s1               ; {28} - - False
+946    pop 1                            ; {27} - False True
+947    push ""                          ; {28} '' - False
+948    push 47                          ; {29} 47 '' -
+950    push 35                          ; {30} 35 47 ''
+952    pop 1: add s2, s1                ; {29} 82 '' -
+953    concat s2, chr(s1 + 41)          ; {29} 82 '{' -
+955    pop 1                            ; {28} '{' - False
+956    pop 1: add s2, s1                ; {27} - False True
+957    push 11                          ; {28} 11 - False
+959    pop 1: push [s1]                 ; {28} [11] - False
+960    push 6                           ; {29} 6 [11] -
+962    push 28                          ; {30} 28 6 [11]
+964    push 25                          ; {31} 25 28 6
+966    pop 1: mul s2, s1                ; {30} 700 6 [11]
+967    pop 1: add s2, s1                ; {29} 706 [11] -
+968    mov stack[s2[0]][0], s1          ; {29} 706 [11] -
+969    pop 1                            ; {28} [11] - False
+970    pop 1                            ; {27} - False True
+971    push null                        ; {28} '__NULL' - False
+972    push 8                           ; {29} 8 '__NULL' -
+974    pop 1: push [s1]                 ; {29} [8] '__NULL' -
+975    pop 1: push stack[s1[0]][0]      ; {29} - '__NULL' -
+976    push 12                          ; {30} 12 - '__NULL'
+978    push 3                           ; {31} 3 12 -
+980    pop 1: push [s1]                 ; {31} [3] 12 -
+981    push ""                          ; {32} '' [3] 12
+982    push 26                          ; {33} 26 '' [3]
+984    push 1                           ; {34} 1 26 ''
+986    pop 1: sub s2, s1                ; {33} 25 '' [3]
+987    concat s2, chr(s1 + 91)          ; {33} 25 't' [3]
+989    pop 1                            ; {32} 't' [3] 12
+990    pop 2: push [stack[s2][0], s1]   ; {31} ['__STACK3', 't'] 12 -
+991    swap stack[-2], s1               ; {31} 12 ['__STACK3', 't'] -
+993    push 53                          ; {32} 53 12 ['__STACK3', 't']
+995    push 35                          ; {33} 35 53 12
+997    pop 1: sub s2, s1                ; {32} 18 12 ['__STACK3', 't']
+998    pop 1: or s2, s1                 ; {31} 30 ['__STACK3', 't'] -
+999    pop 1                            ; {30} ['__STACK3', 't'] - '__NULL'
+1000   pop 1: push s1[0][s1[1]]         ; {30} - - '__NULL'
+1001   push 36                          ; {31} 36 - -
+1003   push 20                          ; {32} 20 36 -
+1005   pop 1: sub s2, s1                ; {31} 16 - -
+1006   pop 1: push [s1]                 ; {31} [16] - -
+1007   pop 1: push stack[s1[0]][0]
+1008   pop 2: push s1(stack[-2:])       ; {30} - - '__NULL'
+1010   swap stack[-2], s1               ; {30} - - '__NULL'
+1012   pop 1                            ; {29} - '__NULL' -
+1013   pop 1: add s2, s1                ; {28} - - False
+1014   swap stack[-2], s1               ; {28} - - False
+1016   pop 1                            ; {27} - False True
+1017   push undefined                   ; {28} - - False
+1018   push 9                           ; {29} 9 - -
+1020   pop 1: push [s1]                 ; {29} [9] - -
+1021   pop 1: push stack[s1[0]][0]
+1022   push 31                          ; {30} 31 - -
+1024   push 16                          ; {31} 16 31 -
+1026   pop 1: sub s2, s1                ; {30} 15 - -
+1027   pop 1: push [s1]                 ; {30} [15] - -
+1028   pop 1: push stack[s1[0]][0]
+1029   push 3                           ; {31} 3 - -
+1031   push 14                          ; {32} 14 3 -
+1033   pop 1: add s2, s1                ; {31} 17 - -
+1034   pop 1: push [s1]                 ; {31} [17] - -
+1035   pop 1: push stack[s1[0]][0]
+1036   pop 2: push s1(stack[-2:])
+1038   swap stack[-2], s1
+1040   pop 1
+1041   pop 1: add s2, s1                ; {28} - - False
+1042   swap stack[-2], s1               ; {28} - - False
+1044   pop 1                            ; {27} - False True
+1045   return true                      ; {27} - False True
+719    pop 1
+720    push 1                           ; {100} 1 - -
+722    jnz 728                          ; {100} 1 - -
+724    pop 1
+725    jmp 741
+741    push 23                          ; {100} 23 - -
+743    push 2                           ; {101} 2 23 -
+745    push 23                          ; {102} 23 2 23
+747    pop 1: shl s2, s1                ; {101} 16777216 23 -
+748    push 13514243                    ; {102} 13514243 16777216 23
+750    pop 1: add s2, s1                ; {101} 30291459 23 -
+751    pop 1: add s2, s1                ; {100} 30291482 - -
+752    return true                      ; {100} 30291482 - -
+728    push null                        ; {101} '__NULL' - -
+729    push 5                           ; {102} 5 '__NULL' -
+731    pop 1: push [s1]                 ; {102} [5] '__NULL' -
+732    pop 1: push stack[s1[0]][0]      ; {102} - '__NULL' -
+733    pop 0: push s1(stack[-0:])       ; {103} - - '__NULL'
+735    pop 1                            ; {102} - '__NULL' -
+736    pop 1                            ; {101} '__NULL' - -
+737    pop 1
+738    jmp 720
+415    pop 1
+416    push undefined
+417    push undefined
+418    push 4                           ; {102} 4 - -
+420    pop 1: push [s1]                 ; {102} [4] - -
+421    pop 1: push stack[s1[0]][0]
+422    push 34                          ; {103} 34 - -
+424    push 18                          ; {104} 18 34 -
+426    pop 1: sub s2, s1                ; {103} 16 - -
+427    pop 1: push [s1]                 ; {103} [16] - -
+428    pop 1: push stack[s1[0]][0]
+429    pop 1: push s1(stack[-1:])
+431    swap stack[-2], s1
+433    mov s1, 22                       ; {103} 22 - -
+435    push 6                           ; {104} 6 22 -
+437    pop 1: sub s2, s1                ; {103} 16 - -
+438    pop 1: push [s1]                 ; {103} [16] - -
+439    pop 1: push stack[s1[0]][0]
+440    pop 1: cmpe s2, s1
+441    not s1
+442    swap stack[-2], s1
+444    pop 1
+445    jnz 451
+447    pop 1
+448    jmp 485
+485    push 59                          ; {102} 59 - -
+487    push 41                          ; {103} 41 59 -
+489    pop 1: sub s2, s1                ; {102} 18 - -
+490    pop 1: push [s1]                 ; {102} [18] - -
+491    push 0                           ; {103} 0 [18] -
+493    mov stack[s2[0]][0], s1          ; {103} 0 [18] -
+494    pop 1                            ; {102} [18] - -
+495    pop 1
+496    push 9                           ; {102} 9 - -
+498    push 29                          ; {103} 29 9 -
+500    push 31                          ; {104} 31 29 9
+502    pop 1: mul s2, s1                ; {103} 899 9 -
+503    pop 1: add s2, s1                ; {102} 908 - -
+504    push 19                          ; {103} 19 908 -
+506    push 1                           ; {104} 1 19 908
+508    pop 1: sub s2, s1                ; {103} 18 908 -
+509    pop 1: push [s1]                 ; {103} [18] 908 -
+510    pop 1: push stack[s1[0]][0]      ; {103} - 908 -
+511    push null                        ; {104} '__NULL' - 908
+512    push undefined                   ; {105} - '__NULL' -
+513    push 3                           ; {106} 3 - '__NULL'
+515    pop 1: push [s1]                 ; {106} [3] - '__NULL'
+516    push ""                          ; {107} '' [3] -
+517    push 12                          ; {108} 12 '' [3]
+519    push 61                          ; {109} 61 12 ''
+521    pop 1: add s2, s1                ; {108} 73 '' [3]
+522    concat s2, chr(s1 + 24)          ; {108} 73 'a' [3]
+524    pop 1                            ; {107} 'a' [3] -
+525    pop 2: push [stack[s2][0], s1]   ; {106} ['__STACK3', 'a'] - '__NULL'
+526    swap stack[-2], s1               ; {106} - ['__STACK3', 'a'] '__NULL'
+528    pop 1                            ; {105} ['__STACK3', 'a'] '__NULL' -
+529    push ""                          ; {106} '' ['__STACK3', 'a'] '__NULL'
+530    push 10                          ; {107} 10 '' ['__STACK3', 'a']
+532    concat s2, chr(s1 + 98)          ; {107} 10 'l' ['__STACK3', 'a']
+534    mov s1, 3                        ; {107} 3 'l' ['__STACK3', 'a']
+536    concat s2, chr(s1 + 98)          ; {107} 3 'le' ['__STACK3', 'a']
+538    mov s1, 21                       ; {107} 21 'le' ['__STACK3', 'a']
+540    push 8                           ; {108} 8 21 'le'
+542    pop 1: add s2, s1                ; {107} 29 'le' ['__STACK3', 'a']
+543    concat s2, chr(s1 + 81)          ; {107} 29 'len' ['__STACK3', 'a']
+545    mov s1, 42                       ; {107} 42 'len' ['__STACK3', 'a']
+547    push 7                           ; {108} 7 42 'len'
+549    pop 1: add s2, s1                ; {107} 49 'len' ['__STACK3', 'a']
+550    concat s2, chr(s1 + 54)          ; {107} 49 'leng' ['__STACK3', 'a']
+552    mov s1, 19                       ; {107} 19 'leng' ['__STACK3', 'a']
+554    push 22                          ; {108} 22 19 'leng'
+556    pop 1: add s2, s1                ; {107} 41 'leng' ['__STACK3', 'a']
+557    concat s2, chr(s1 + 75)          ; {107} 41 'lengt' ['__STACK3', 'a']
+559    mov s1, 28                       ; {107} 28 'lengt' ['__STACK3', 'a']
+561    push 7                           ; {108} 7 28 'lengt'
+563    pop 1: sub s2, s1                ; {107} 21 'lengt' ['__STACK3', 'a']
+564    concat s2, chr(s1 + 83)          ; {107} 21 'length' ['__STACK3', 'a']
+566    pop 1                            ; {106} 'length' ['__STACK3', 'a'] '__NULL'
+567    pop 2: push [s2[0][s2[1]], s1]   ; {105} - '__NULL' -
+568    swap stack[-2], s1               ; {105} '__NULL' - -
+570    pop 1                            ; {104} - - 908
+571    pop 1: push s1[0][s1[1]]         ; {104} - - 908
+572    pop 1: cmpge s2, s1              ; {103} - 908 -
+573    not s1                           ; {104} - - 908
+574    swap stack[-2], s1               ; {104} - - 908
+576    push 13                          ; {105} 13 - -
+578    push 11                          ; {106} 11 13 -
+580    pop 1: mul s2, s1                ; {105} 143 - -
+581    pop 1: shr s2, s1                ; {104} - - 908
+582    pop 1                            ; {103} - 908 -
+583    jnz 589                          ; {103} - 908 -
+585    pop 1                            ; {102} 908 - -
+586    jmp 675                          ; {102} 908 - -
+675    push null                        ; {103} '__NULL' 908 -
+676    push 54                          ; {104} 54 '__NULL' 908
+678    push 38                          ; {105} 38 54 '__NULL'
+680    pop 1: sub s2, s1                ; {104} 16 '__NULL' 908
+681    pop 1: push [s1]                 ; {104} [16] '__NULL' 908
+682    push null                        ; {105} '__NULL' [16] '__NULL'
+683    push 5                           ; {106} 5 '__NULL' [16]
+685    pop 1: push [s1]                 ; {106} [5] '__NULL' [16]
+686    pop 1: push stack[s1[0]][0]      ; {106} - '__NULL' [16]
+687    pop 0: push s1(stack[-0:])       ; {107} - - '__NULL'
+689    swap stack[-2], s1               ; {107} - - '__NULL'
+691    pop 1                            ; {106} - '__NULL' [16]
+692    mov stack[s2[0]][0], s1          ; {106} - '__NULL' [16]
+693    pop 3                            ; {103} '__NULL' 908 -
+695    jmp 394                          ; {103} '__NULL' 908 -
+589    push undefined
+590    push 38                          ; {102} 38 - -
+592    push 21                          ; {103} 21 38 -
+594    pop 1: sub s2, s1                ; {102} 17 - -
+595    pop 1: push [s1]                 ; {102} [17] - -
+596    push true                        ; {103} True [17] -
+597    push 6                           ; {104} 6 True [17]
+599    pop 1: push [s1]                 ; {104} [6] True [17]
+600    pop 1: push stack[s1[0]][0]      ; {104} - True [17]
+601    push 47                          ; {105} 47 - True
+603    push 30                          ; {106} 30 47 -
+605    pop 1: sub s2, s1                ; {105} 17 - True
+606    pop 1: push [s1]                 ; {105} [17] - True
+607    pop 1: push stack[s1[0]][0]      ; {105} - - True
+608    push true                        ; {106} True - -
+609    push true                        ; {107} True True -
+610    push 60                          ; {108} 60 True True
+612    push 45                          ; {109} 45 60 True
+614    pop 1: sub s2, s1                ; {108} 15 True True
+615    pop 1: push [s1]                 ; {108} [15] True True
+616    push 44                          ; {109} 44 [15] True
+618    push 26                          ; {110} 26 44 [15]
+620    pop 1: sub s2, s1                ; {109} 18 [15] True
+621    pop 1: push [s1]                 ; {109} [18] [15] True
+622    pop 1: push stack[s1[0]][0]      ; {109} - [15] True
+623    pop 2: push [stack[s2][0], s1]   ; {108} ['__STACK15', None] True True
+624    swap stack[-2], s1               ; {108} True ['__STACK15', None] True
+626    pop 1                            ; {107} ['__STACK15', None] True -
+627    pop 1: push s1[0][s1[1]]         ; {107} - True -
+628    push 20                          ; {108} 20 - True
+630    push 4                           ; {109} 4 20 -
+632    pop 1: sub s2, s1                ; {108} 16 - True
+633    pop 1: push [s1]                 ; {108} [16] - True
+634    pop 1: push stack[s1[0]][0]      ; {108} - - True
+635    pop 1: xor s2, s1                ; {107} - True -
+636    swap stack[-2], s1               ; {107} True - -
+638    pop 1
+639    pop 2: push s1(stack[-2:])       ; {105} - - True
+641    swap stack[-2], s1               ; {105} - - True
+643    pop 1                            ; {104} - True [17]
+644    mov stack[s2[0]][0], s1          ; {104} - True [17]
+645    push true                        ; {105} True - True
+646    push 26                          ; {106} 26 True -
+648    push 8                           ; {107} 8 26 True
+650    pop 1: sub s2, s1                ; {106} 18 True -
+651    pop 1: push [s1]                 ; {106} [18] True -
+652    push s1                          ; {107} [18] [18] True
+653    pop 1: push stack[s1[0]][0]      ; {107} - [18] True
+654    push s1                          ; {108} - - [18]
+655    swap stack[-3], s1               ; {108} [18] - -
+657    swap stack[-2], s1               ; {108} - [18] -
+659    push 1                           ; {109} 1 - [18]
+661    pop 1: add s2, s1                ; {108} - [18] -
+662    mov stack[s2[0]][0], s1          ; {108} - [18] -
+663    pop 1                            ; {107} [18] - True
+664    mov s1, 0                        ; {107} 0 - True
+666    swap stack[-2], s1               ; {107} - 0 True
+668    pop 1: or s2, s1                 ; {106} - True -
+669    pop 5
+671    pop 1
+672    jmp 496
+451    pop 1
+452    push 1                           ; {100} 1 - -
+454    jnz 460                          ; {100} 1 - -
+456    pop 1
+457    jmp 473
+473    push 12                          ; {100} 12 - -
+475    push 2                           ; {101} 2 12 -
+477    push 23                          ; {102} 23 2 12
+479    pop 1: shl s2, s1                ; {101} 16777216 12 -
+480    push 12704174                    ; {102} 12704174 16777216 12
+482    pop 1: add s2, s1                ; {101} 29481390 12 -
+483    pop 1: add s2, s1                ; {100} 29481402 - -
+484    return true                      ; {100} 29481402 - -
+460    push false                       ; {101} False - -
+461    push 5                           ; {102} 5 False -
+463    pop 1: push [s1]                 ; {102} [5] False -
+464    pop 1: push stack[s1[0]][0]      ; {102} - False -
+465    pop 0: push s1(stack[-0:])       ; {103} - - False
+467    pop 1                            ; {102} - False -
+468    pop 1                            ; {101} False - -
+469    pop 1
+470    jmp 452
+360    pop 1
+361    push 1                           ; {100} 1 - -
+363    jnz 369                          ; {100} 1 - -
+365    pop 1
+366    jmp 382
+382    push 34                          ; {100} 34 - -
+384    push 2                           ; {101} 2 34 -
+386    push 21                          ; {102} 21 2 34
+388    pop 1: shl s2, s1                ; {101} 4194304 34 -
+389    push 1726710                     ; {102} 1726710 4194304 34
+391    pop 1: add s2, s1                ; {101} 5921014 34 -
+392    pop 1: add s2, s1                ; {100} 5921048 - -
+393    return true                      ; {100} 5921048 - -
+369    push undefined
+370    push 5                           ; {102} 5 - -
+372    pop 1: push [s1]                 ; {102} [5] - -
+373    pop 1: push stack[s1[0]][0]
+374    pop 0: push s1(stack[-0:])
+376    pop 1
+377    pop 1
+378    pop 1
+379    jmp 361
